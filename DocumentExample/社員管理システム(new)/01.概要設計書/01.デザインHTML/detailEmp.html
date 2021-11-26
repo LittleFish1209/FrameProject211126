@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> </title>
+    <link rel="stylesheet" href="style/stylelist.css">
+    <script type="text/javascript" src="js/function.js">
+    </script>
+ 
+</head>
+
+<body bgcolor="lightgray" onload="showvalf()">
+    <div class="logo">
+        <a href="login.html"><img src="image/logo.png" width="100px" height="100px"></a>
+    </div>
+    <div class="header">
+        <p1>株式会社ソフトユージング</p1>
+    </div>
+    </br>
+    </br>
+    <hr style="border:gray 0.5px solid " size="1" />
+    <p align="center" style="color: brown; font-size:50px; font-weight: bold;">社員基本情報詳細画面</p>
+    <form>
+        <a href="login.html"><input type="button" class="exit" value="ログアウト" ></a>
+        </br>
+        <div class="neirong">
+            <table border="0" cellspacing="0">
+                <tr>
+                    <td>
+                        <p style="text-indent:15em;">社員番号</p>
+                    </td>
+                    <td style="text-indent:1em;"><input type="text" name="1" id="para0" disabled></td>
+                    <td>
+                        <pa hidden>※必須</pa>
+                    </td>
+                    <td>
+                        <p style="text-indent:-2em;">メールアドレス</p>
+                    </td>
+                    <td style="text-indent:-20em;"><input type="text" name="10" id="para2" disabled></td>
+                    <td>
+                        <pa hidden>※必須</pa>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p style="text-indent:15em;">姓(漢字)</p>
+                    </td>
+                    <td style="text-indent:1em;"><input type="text" name="21" id="para1" disabled></td>
+                    <td>
+                        <pa hidden>※必須</pa>
+                    </td>
+
+                    <td>
+                        <p style="text-indent:-2em;">名(漢字)</p>
+                    </td>
+                    <td style="text-indent:-20em;"><input type="text" name="22" id="para2" disabled></td>
+                    <td>
+                        <pa hidden>※必須</pa>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p style="text-indent:15em;">姓(カナ)</p>
+                    </td>
+                    <td style="text-indent:1em;"><input type="text" name="31" id="para3" disabled></td>
+                    <td>
+                        <pa hidden>※必須</pa>
+                    </td>
+
+                    <td>
+                        <p style="text-indent:-2em;">名(カナ)</p>
+                    </td>
+                    <td style="text-indent:-20em;"><input type="text" name="32" id="para4" disabled></td>
+                    <td>
+                        <pa hidden>※必須</pa>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p style="text-indent:15em;">イニシャル名</p>
+                    </td>
+                    <td style="text-indent:1em;"><input type="text" name="41" disabled></td>
+                    <td>&nbsp;</td>
+
+                    <td>
+                        <p style="text-indent:-2em;">性別コード</p>
+                    </td>
+                    <td style="text-indent:-20em;">
+                        <input type="text" name="sex" id="para5" disabled>
+                            
+                    </td>
+                    <td>
+                        <pa hidden>※必須</pa>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p style="text-indent:15em;">生年月日</p>
+                    </td>
+                    <td style="text-indent:1em;"><input type="text" name="51" id="para6" disabled></td>
+                    <td>
+                        <pa hidden>※必須</pa>
+                    </td>
+
+                    <td>
+                        <p style="text-indent:-2em;">国籍</p>
+                    </td>
+                    <td style="text-indent:-20em;"><input type="text" name="nation" disabled>
+                           
+                    </td>
+                    <td>
+                        <pa hidden>※必須</pa>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p style="text-indent:15em;">卒業学校名</p>
+                    </td>
+                    <td style="text-indent:1em;"><input type="text" name="61" disabled></td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <p style="text-indent:-2em;">専攻</p>
+                    </td>
+                    <td style="text-indent:-20em;"><input type="text" name="62" disabled></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p style="text-indent:15em;">学歴</p>
+                    </td>
+                    <td style="text-indent:1em;">
+                        <input type="text" name="Education"  disabled>
+                            
+                    </td>
+                    <td>
+                        <pa hidden>※必須</pa>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p style="text-indent:15em;">住所</p>
+                    </td>
+                    <td style="text-indent:1em;"><input type="text" name="81" disabled></td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <p style="text-indent:-2em;">郵便番号</p>
+                    </td>
+                    <td style="text-indent:-20em;"><input type="text" name="82" disabled></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p style="text-indent:15em;">最寄駅</p>
+                    </td>
+                    <td style="text-indent:1em;"><input type="text" name="91" id="para7" disabled></td>
+                    <td>
+                        <pa hidden>※必須</pa>
+                    </td>
+                    <td>
+                        <p style="text-indent:-2em;">電話番号(「.」拔き)</p>
+                    </td>
+                    <td style="text-indent:-20em;"><input type="text" name="92" disabled></td>
+                    <td>
+                        <pa hidden>※必須</pa>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p style="text-indent:15em;">来日月年</p>
+                    </td>
+                    <td style="text-indent:1em;"><input type="text" name="101" disabled></td>
+                    <td>
+                        <pa hidden>※必須</pa>
+                    </td>
+                    <td style="text-indent:15em;">実年数</td>
+                    <td style="text-indent:-20em;"><input type="text" name="102" disabled></td>
+                    <td>
+                        <pa hidden>※必須</pa>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p style="text-indent:15em;">入社日付</p>
+                    </td>
+                    <td style="text-indent:1em;"><input type="text" name="111" disabled></td>
+                    <td>
+                        <pa hidden>※必須</pa>
+                    </td>
+                    <td>
+                        <p style="text-indent:-2em;">退職日付</p>
+                    </td>
+                    <td style="text-indent:-20em;"><input type="text" name="112" disabled></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p style="text-indent:15em;">所屬部門コード(部)</p>
+                    </td>
+                    <td style="text-indent:1em;">
+                        <input type="text" name="department"  id="para8" disabled>
+                    </td>
+                    <td>
+                        <pa hidden>※必須</pa>
+                    </td>
+                    <td>
+                        <p style="text-indent:-2em;">所屬部門コード(課)</p>
+                    </td>
+                    <td style="text-indent:-20em;">
+                        <input type="text" name="department"  disabled>
+                            
+                    </td>
+                    <td>
+                        <p1>&nbsp;</p1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p style="text-indent:15em;">役割コード</p>
+                    </td>
+                    <td style="text-indent:1em;">
+                        <input type="text" name="zhiwu"  disabled>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p style="text-indent:15em;">備考</p>
+                    </td>
+                    <td colspan="4" style="text-indent:1em;">
+                        <input type="text" name="141" style="width: 800px;height: 200px;" disabled>
+                    </td>
+                </tr>
+            </table>
+    </form>
+    </br>
+    <div>
+        <a href="listEmp.html"><input type="button" value="戻る" class="back" onclick="back()"></a>
+        <br>
+        <br>
+        <br>
+
+    </div>
+</body>

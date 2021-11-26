@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> </title>
+    <link rel="stylesheet" href="style/stylelist.css">
+    <script type="text/javascript" src="js/function.js">
+    </script>
+
+</head>
+
+<body bgcolor="lightgray" onload="showvalf()">
+    <div class="logo">
+        <a href="login.html"><img src="image/logo.png" width="100px" height="100px"></a>
+    </div>
+    <div class="header">
+        <p1>株式会社ソフトユージング</p1>
+    </div>
+    </br>
+    </br>
+    <hr style="border:gray 0.5px solid " size="1" />
+    <p align="center" style="color: brown; font-size:50px; font-weight: bold;">社員基本情報登録画面</p>
+    <form name="form2">
+        <input type="hidden" id="trId">
+        <a href="login.html"><input type="button" class="exit" value="ログアウト" ></a>
+        </br>
+        <div class="neirong">
+            <table border="0" cellspacing="0" id="fox">
+                <tr>
+                    <td>
+                        <p class="vbl">社員番号</p>
+                    </td>
+                    <td class="val"><input type="text" class="textB" name="textA" id="para0"></td>
+                    <td>
+                        <pa>※必須</pa>
+                    </td>
+                    <td>
+                        <p class="vcl">メールアドレス</p>
+                    </td>
+                    <td class="val"><input type="text"> </td>
+                    <td>
+                        <pa>※必須</pa>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="vbl">姓(漢字)</p>
+                    </td>
+                    <td class="val"><input type="text" class="textB" name="textA" id="para1"></td>
+                    <td>
+                        <pa>※必須</pa>
+                    </td>
+
+                    <td>
+                        <p class="vcl">名(漢字)</p>
+                    </td>
+                    <td class="val"><input type="text" class="textB" name="textA" id="para2"></td>
+                    <td>
+                        <pa>※必須</pa>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="vbl">姓(カナ)</p>
+                    </td>
+                    <td class="val"><input type="text" class="textB" name="textA" id="para3"></td>
+                    <td>
+                        <pa>※必須</pa>
+                    </td>
+
+                    <td>
+                        <p class="vcl">名(カナ)</p>
+                    </td>
+                    <td class="val"><input type="text" class="textB" name="textA" id="para4"></td>
+                    <td>
+                        <pa>※必須</pa>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="vbl">イニシャル名</p>
+                    </td>
+                    <td class="val"><input type="text" name="41"></td>
+                    <td>&nbsp;</td>
+
+                    <td>
+                        <p class="vcl">性別コード</p>
+                    </td>
+                    <td class="val">
+                        <select name="textA" class="textB" style="width: 175px;" id="para5">
+                            <option value=""></option>
+                            <option value="男">男</option>
+                            <option value="女">女</option>
+                        </select>
+                    </td>
+                    <td>
+                        <pa>※必須</pa>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="vbl">生年月日</p>
+                    </td>
+                    <td class="val"><input type="date" class="textB" name="textA" id="para6"></td>
+                    <td>
+                        <pa>※必須</pa>
+                    </td>
+
+                    <td>
+                        <p class="vcl">国籍</p>
+                    </td>
+                    <td class="val"><select name="textA" style="width: 175px;">
+                            <option value=""></option>
+                            <option value="japanese">日本</option>
+                            <option value="chinese">中国</option>
+                            <option value="english">イギリス</option>
+                            <option value="america">アメリカ</option>
+                            <option value="other">その他</option>
+                        </select>
+                    </td>
+                    <td>
+                        <pa>※必須</pa>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="vbl">卒業学校名</p>
+                    </td>
+                    <td class="val"><input type="text" name="61"></td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <p class="vcl">専攻</p>
+                    </td>
+                    <td class="val"><input type="text" name="62"></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="vbl">学歴</p>
+                    </td>
+                    <td class="val">
+                        <select name="textA" style="width: 175px;">
+                            <option value=""></option>
+                            <option value="gaozhong">高中</option>
+                            <option value="daxue">大學</option>
+                            <option value="duanda">短大</option>
+                        </select>
+                    </td>
+                    <td>
+                        <pa>※必須</pa>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="vbl">住所</p>
+                    </td>
+                    <td class="val"><input type="text" name="81"></td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <p class="vcl">郵便番号</p>
+                    </td>
+                    <td class="val"><input type="text" name="number"></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="vbl">最寄駅</p>
+                    </td>
+                    <td class="val"><input type="text" class="textB" name="textA" id="para7"></td>
+                    <td>
+                        <pa>※必須</pa>
+                    </td>
+                    <td>
+                        <p class="vcl">電話番号(「.」拔き)</p>
+                    </td>
+                    <td class="val"><input type="text" id="phone" name="textA" maxlength="11"></td>
+                    <td>
+                        <pa>※必須</pa>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="vbl">来日年月</p>
+                    </td>
+                    <td class="val"><input type="text" id="times" name="textA"></td>
+                    <td>
+                        <pa>※必須</pa>
+                    </td>
+                    <td class="vcl">実年数</td>
+                    <td style="text-indent:1em;" class="val"><input type="text" id="years" name="textA"></td>
+                    <td>
+                        <pa>※必須</pa>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="vbl">入社日付</p>
+                    </td>
+                    <td class="val"><input type="date" id="days" name="textA"></td>
+                    <td>
+                        <pa>※必須</pa>
+                    </td>
+                    <td>
+                        <p class="vcl">退職日付</p>
+                    </td>
+                    <td class="val"><input type="date" id="leave" name="112" id="tuishe"></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="vbl">所屬部門コード(部)</p>
+                    </td>
+                    <td class="val">
+                        <select class="textB" name="textA" style="width: 175px;" id="para8">
+                            <option value=""></option>
+                            <option value="人事部">人事部</option>
+                            <option value="開発部">開発部</option>
+                            <option value="總務部">總務部</option>
+                        </select>
+                    </td>
+                    <td>
+                        <pa>※必須</pa>
+                    </td>
+                    <td>
+                        <p class="vcl">所屬部門コード(課)</p>
+                    </td>
+                    <td class="val">
+                        <select name="department" style="width: 175px;">
+                            <option value=""></option>
+                            <option value="renshi">人事部</option>
+                            <option value="kaifa">開発部</option>
+                            <option value="zongwu">總務部</option>
+                        </select>
+                    </td>
+                    <td>
+                        <p1>&nbsp;</p1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="vbl">役割コード</p>
+                    </td>
+                    <td class="val">
+                        <select name="zhiwu" style="width: 175px;">
+                            <option value=""></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="vbl">備考</p>
+                    </td>
+                    <td colspan="4" class="val">
+                        <input type="text" name="141" style="width: 800px;height: 200px;">
+                    </td>
+                    <td hidden></td>
+                </tr>
+            </table>
+            </br>
+            <div>
+                <input type="button" value="確認" class="sure" onclick="panduan()">
+            </div>
+            <div>
+                <input type="button" value="戻る" class="sure" onclick="back()">
+            </div>
+    </form>
+</body>

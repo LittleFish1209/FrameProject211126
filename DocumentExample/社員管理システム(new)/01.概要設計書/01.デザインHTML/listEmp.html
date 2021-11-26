@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Conent-Type" content="text/html">
+    <title> </title>
+    <link rel="stylesheet" href="style/stylelist.css">
+    <script type="text/javascript" src="js/function.js">
+    </script>
+
+</head>
+
+<body bgcolor="lightgray" onload="recive()">
+    <div class="logo">
+        <a href="login.html"><img src="image/logo.png" width="100px" height="100px"></a>
+    </div>
+    <div class="header">
+        <p1>株式会社ソフトユージング</p1>
+    </div>
+    </br>
+    </br>
+    <hr style="border:gray 0.5px solid " size="1" />
+    </br>
+    <h1 align="center" style="color: brown; font-size:50px;">社員基本情報一覧</h1>
+    <form id="form1">
+        <div>
+            <a href="login.html"><input type="button" value="ログアウト" class="button"></a>
+        </div>
+        <div>
+        <a href="menu.html"><input type="button" value="メニュー画面" class="button"></a>
+        </div>
+        <div>
+        <a href="addEmp.html"><input type="button" value="新社員登録" class="button"></a>
+        </div>
+        </br>
+        </br>
+        </br>
+        <p class="border" style="color: black;">以下の条件を指定することで<input type="button" value="社員検索" class="btn"
+                onclick="search()">を行う。</br>
+            名前：<input type="text" id="searchName"> 部署：<input type="text" id="searchDep">
+        </p>
+        <table border="1" cellspacing=0 class="table" name="table">
+            <th class="th" id="syfh">社員番号</th>
+            <th class="th" id="mqhz" colspan="2">名前（漢字）</th>
+            <th class="th" id="mqkn" colspan="2">名前（カナ）</th>
+            <th class="th" id="xb">性別</th>
+            <th class="th" id="snyr">生年月日</th>
+            <th class="th" id="zjy">最寄駅</th>
+            <th class="th" id="bs">部署</th>
+            <th class="th" id="cz">操作</th>
+            <tr id="tr1">
+                <td>100001</td>
+                <td style="border-right-style: hidden; text-align: right;" onclick="jtxx(this)" name="empName">田中</td>
+                <td style="border-left-style: hidden; text-align: left;" onclick="jtxx(this)">一郎</td>
+                <td style="border-right-style: hidden; text-align: right;">タナカ</td>
+                <td style="border-left-style: hidden; text-align: left;">イチロウ</td>
+                <td>男</td>
+                <td>1986-01-01</td>
+                <td>横浜</td>
+                <td name="dep">開発部</td>
+                <td><input type="button" value="変更" class="tbtn"
+                        onclick="henkou(this)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="削除"
+                        class="tbtn" onclick="deleteA(this)"></td>
+            </tr>
+            <tr class="tr" id="tr2">
+                <td>100002</td>
+                <td style="border-right-style: hidden; text-align: right;" onclick="jtxx(this)" name="empName">田中</td>
+                <td style="border-left-style: hidden; text-align: left;" onclick="jtxx(this)">太郎</td>
+                <td style="border-right-style: hidden; text-align: right;">タナカ</td>
+                <td style="border-left-style: hidden; text-align: left;">タロウ</td>
+                <td>男</td>
+                <td>1987-11-11</td>
+                <td>品川</td>
+                <td name="dep">総務部</td>
+                <td><input type="button" value="変更" class="tbtn"
+                        onclick="henkou(this)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="削除"
+                        class="tbtn" onclick="deleteA(this)"></td>
+            </tr>
+            <tr id="tr3">
+                <td>100003</td>
+                <td style="border-right-style: hidden; text-align: right;" onclick="jtxx(this)" name="empName">田中</td>
+                <td style="border-left-style: hidden; text-align: left;" onclick="jtxx(this)">花子</td>
+                <td style="border-right-style: hidden; text-align: right;">タナカ</td>
+                <td style="border-left-style: hidden; text-align: left;">ハナコ</td>
+                <td>女</td>
+                <td>1990-05-25</td>
+                <td>東京</td>
+                <td name="dep">人事部</td>
+                <td><input type="button" value="変更" class="tbtn"
+                        onclick="henkou(this)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="削除"
+                        class="tbtn" onclick="deleteA(this)"></td>
+            </tr>
+            <tr class="tr" id="tr4">
+                <td>100004</td>
+                <td style="border-right-style: hidden; text-align: right;" onclick="jtxx(this)" name="empName">鈴木</td>
+                <td style="border-left-style: hidden; text-align: left;" onclick="jtxx(this)">一郎</td>
+                <td style="border-right-style: hidden; text-align: right;">スズキ</td>
+                <td style="border-left-style: hidden; text-align: left;">イチロウ</td>
+                <td>男</td>
+                <td>1986-01-01</td>
+                <td>横浜</td>
+                <td name="dep">開発部</td>
+                <td><input type="button" value="変更" class="tbtn"
+                        onclick="henkou(this)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="削除"
+                        class="tbtn" onclick="deleteA(this)"></td>
+            </tr>
+            <tr id="tr5">
+                <td>100005</td>
+                <td style="border-right-style: hidden; text-align: right;" onclick="jtxx(this)" name="empName">鈴木</td>>
+                <td style="border-left-style: hidden; text-align: left;" onclick="jtxx(this)">太郎</td>
+                <td style="border-right-style: hidden; text-align: right;">スズキ</td>
+                <td style="border-left-style: hidden; text-align: left;">タロウ</td>
+                <td>男</td>
+                <td>1987-11-11</td>
+                <td>品川</td>
+                <td name="dep">総務部</td>
+                <td><input type="button" value="変更" class="tbtn"
+                        onclick="henkou(this)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="削除"
+                        class="tbtn" onclick="deleteA(this)"></td>
+            </tr>
+            <tr class="tr" id="tr6">
+                <td>100006</td>
+                <td style="border-right-style: hidden; text-align: right;" onclick="jtxx(this)" name="empName">鈴木</td>
+                <td style="border-left-style: hidden; text-align: left;" onclick="jtxx(this)">花子</td>
+                <td style="border-right-style: hidden; text-align: right;">スズキ</td>
+                <td style="border-left-style: hidden; text-align: left;">ハナコ</td>
+                <td>女</td>
+                <td>1990-05-25</td>
+                <td>東京</td>
+                <td name="dep">人事部</td>
+                <td><input type="button" value="変更" class="tbtn"
+                        onclick="henkou(this)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="削除"
+                        class="tbtn" onclick="deleteA(this)"></td>
+            </tr>
+        </table>
+    </form>
+</body>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> </title>
+    <link rel="stylesheet" href="style/stylelist.css">
+    <script type="text/javascript" src="js/function.js">
+    </script>
+</head>
+<style>
+    .header {
+    background-color: brown;
+    color: cornsilk;
+    border-radius: 10px 150px 10px 50px;
+    padding: 10px;
+    width: 98%;
+    top: 0%;
+    font-size: 65px;
+    text-align: center;
+    font-weight: bold;
+}
+.logo {
+    top: 1%;
+    left: 0.5%;
+    position: absolute;
+}
+.exit{
+    position: absolute;
+    left: 700px;
+    color: #0de5f5;
+    border: rgb(0, 0, 0) 1px solid;
+    border-left-color: white;
+    border-top-color: white;
+    background-color: rgb(250, 227, 177);
+    border-radius: 20px;
+    width: 90px;
+    height: 30px;
+    line-height: 10px;
+}
+.back{
+    position: absolute;
+    left: 350px;
+    color: aliceblue;
+    border: black 3px solid;
+    border-left-color: white;
+    border-top-color: white;
+    background-color: rgb(140, 140, 252);
+    height: 30px;
+    width: 80px;
+    border-radius: 30px;
+    }
+    </style>
+
+
+<body bgcolor="lightgray">
+    <div class="logo">
+        <a href="menu.html"><img src="image/logo.png" width="100px" height="100px"></a>
+    </div>
+    <div class="header">
+        <p1>株式会社ソフトユージング</p1>
+    </div>
+    </br>
+    </br>
+    <hr style="border:gray 0.5px solid " size="1" />
+    <p align="center" style="color: brown; font-size:50px; font-weight: bold;">社内管理システム</p>
+    </br>
+    </br>
+    <form name="form11">
+        <p align="center">ユーザーID：<input placeholder="メールアドレスを入れてください" type="mail" 
+            class="text" name="address" value="" size="40px" onchange="wupBtn()"></p>
+        <p align="center">パスワード：<input placeholder="大文字⋆小文字を注意してください" 
+            maxlength="6" type="password" class="text" name="password" value="" size="40px" onkeyup="chkPwd()" onchange="wupBtn()"></p>
+        <p>
+            <a href="menu.html"><input type="button" id="login" value="ログイン" name="sure" onclick="juage()"  disabled></a></p>
+    </form>
+</body>
